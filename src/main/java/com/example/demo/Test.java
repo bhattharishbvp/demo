@@ -8,16 +8,25 @@ import java.util.Optional;
 public class Test {
 
 	public static void main(String[] args) {
-		String cookie = "ramesh,hema,harish,shobhna,jeeva";
 		
-		Optional<String> cookieStr = Optional.ofNullable(cookie); 
+		String test = "{\"key\":\"{\"key1\":\"value\"}\"}";
 		
-		List<String> cookies = new ArrayList<>();
+		System.out.println(test);
 		
-		if(cookieStr.isPresent()) {
-			Arrays.stream(cookieStr.get().split(",")).forEach(cookies::add);
-		}
+//		String cookie = "ramesh,hema,harish,shobhna,jeeva";
+//		
+//		Optional<String> cookieStr = Optional.ofNullable(cookie); 
+//		
+//		List<String> cookies = new ArrayList<>();
+//		
+//		if(cookieStr.isPresent()) {
+//			Arrays.stream(cookieStr.get().split(",")).forEach(cookies::add);
+//		}
+//		
+//		cookies.stream().forEach(System.out::println);
 		
-		cookies.stream().forEach(System.out::println);
+		
+		
+		
 	}
 }
